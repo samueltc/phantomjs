@@ -211,7 +211,7 @@ QNetworkReply *NetworkAccessManager::createRequest(Operation op, const QNetworkR
     if (op == QNetworkAccessManager::PostOperation) {
         QString contentType = req.header(QNetworkRequest::ContentTypeHeader).toString();
         if (contentType.isEmpty()) {
-            req.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
+            //req.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
         }
     }
 
